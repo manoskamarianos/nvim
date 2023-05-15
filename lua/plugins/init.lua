@@ -40,6 +40,7 @@ require("lazy").setup({
 			require("plugins.config.neo-tree")
 		end,
 	},
+	"nvim-tree/nvim-web-devicons",
 	"MunifTanjim/nui.nvim",
 	"nvim-lua/plenary.nvim",
 
@@ -66,5 +67,9 @@ require("lazy").setup({
 		config = function()
 			require("plugins.config.window-picker")
 		end,
+	},
+	-- Telescope: File search
+	{
+		"nvim-telescope/telescope.nvim"
 	},
 }, opts)

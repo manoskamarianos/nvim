@@ -1,9 +1,8 @@
+local keymap = vim.api.nvim_set_keymap
+local default_opts = {noremap = true, silent = true}
+
 vim.g.mapleader = ' '
 
-local M = {}
-
-M.general = {
-	["<C-n>"] = { "<cmd>Neotree toggle<CR>", "Open File tree", opts = { silent = true } },
-}
-
-return M
+-- Neotree Keymaps
+keymap("n","<leader>h", "<cmd>Neotree toggle<CR>", default_opts)
+keymap("n","<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", default_opts)
