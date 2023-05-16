@@ -181,7 +181,7 @@ local c = {
 	scroll_bar = {
 		provider = "scroll_bar",
 		hl = {
-			fg = "yellow",
+			fg = "aqua",
 			style = "bold",
 		},
 	},

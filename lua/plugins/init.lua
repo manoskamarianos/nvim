@@ -32,6 +32,12 @@ require("lazy").setup({
 			require("plugins.config.feline")
 		end
 	},
+	{
+		'lewis6991/gitsigns.nvim',
+		config = function()
+			require("plugins.config.gitsigns-nvim")
+		end
+	},
 
 	-- Neotree (+dep): file tree
 	{
