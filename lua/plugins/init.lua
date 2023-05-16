@@ -72,4 +72,10 @@ require("lazy").setup({
 	{
 		"nvim-telescope/telescope.nvim"
 	},
+	{
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			require("plugins.config.nvim-colorizer")
+		end,
+	},
 }, opts)
